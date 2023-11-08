@@ -109,9 +109,21 @@ function mediaVoti(array, genre){
 
 // Creiamo una funzione che restituisca la lista di tutti i generi dei film, senza che questi si ripetano -------------------------------------
 
-function generiFilm(array, genre){
-    let arreyFiltrato = array.filter((el)=> el.genre === genre );
-    let arre
+function generiFilm(array){
+
+    const arrayGeneri = [] ;
+
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        if(!arrayGeneri.includes(element.genre)){
+            arrayGeneri.push(element.genre)
+        }
+    }
+
+    // console.log(arrayGeneri)
+    return arrayGeneri
 }
+
+generiFilm(arrayObj);
 
 
