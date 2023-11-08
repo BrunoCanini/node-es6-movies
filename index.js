@@ -83,7 +83,7 @@ const arrayMap = arrayObj.map(function(i){
     }
 })
 
-// console.log(arrayMap);
+console.log(arrayMap);
 
 // Creiamo una funzione che restituisca la media dei voti di tutti i film per un determinato genere ------------------------------------------
 
@@ -100,7 +100,7 @@ function mediaVoti(array, genre){
 
     counterFinale = counter / arreyFiltrato.length;
     // console.log(counter);
-    // console.log(counterFinale);
+    console.log(counterFinale);
 
     return counterFinale
 }
@@ -120,7 +120,7 @@ function generiFilm(array){
         }
     }
 
-    // console.log(arrayGeneri)
+    console.log(arrayGeneri)
     return arrayGeneri
 }
 
