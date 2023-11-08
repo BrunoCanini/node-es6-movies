@@ -89,7 +89,7 @@ const arrayMap = arrayObj.map(function(i){
 
 function mediaVoti(array, genre){
     let arrayFiltrato = array.filter((el)=> el.genre === genre );
-    console.log(arrayFiltrato);
+    // console.log(arrayFiltrato);
 
     counter = 0;
 
@@ -126,4 +126,32 @@ function generiFilm(array){
 
 generiFilm(arrayObj);
 
+// Creiamo una funzione che filtri i film in base ad un genere passato come argomento e ne ritorni un array con all’interno il risultato della funzione toString() di ogni film.
 
+// function filterGenre(array, genre){
+
+//     const arrayFiltrato = array.filter((el)=> {
+//         if (el.genre == genre){
+//             return true;
+//         } else {
+//             return false;
+//         }
+//     })
+
+//     console.log(arrayFiltrato)
+
+// }
+
+// filterGenre(arrayObj, "fantascienza");
+
+function genreFilter(genre) {
+    const videoDescription = [];
+    arrayMap.forEach(e => {
+        if (e.genre === genre) {
+            videoDescription.push(e.toString());
+        }
+    })
+    return console.log(videoDescription);
+}
+
+genreFilter("fantascienza");
