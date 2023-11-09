@@ -93,19 +93,19 @@ function mediaVoti(array, genre){
 
     counter = 0;
 
-    for (let i = 0; i < arreyFiltrato.length; i++) {
-        const element = arreyFiltrato[i];
+    for (let i = 0; i < arrayFiltrato.length; i++) {
+        const element = arrayFiltrato[i];
         counter += element.rating
     }
 
-    counterFinale = counter / arreyFiltrato.length;
+    counterFinale = counter / arrayFiltrato.length;
     // console.log(counter);
     console.log(counterFinale);
 
     return counterFinale
 }
 
-// mediaVoti(arrayObj, "fantascienza")
+mediaVoti(arrayObj, "fantascienza")
 
 // Creiamo una funzione che restituisca la lista di tutti i generi dei film, senza che questi si ripetano -------------------------------------
 
